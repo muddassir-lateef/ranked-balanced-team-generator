@@ -3,18 +3,6 @@ import random
 from itertools import combinations
 from pandas import DataFrame
 import streamlit as st
-#import plotly.express as px
-
-
-#df = pd.read_excel("players.xlsx")
-# Create an empty list
-#players = []
-# Iterate over each row
-#for index, rows in df.iterrows():
-    # Create list for the current row
- #   my_list = [rows.Player,rows.Level]
-    # append the list to the final list
-  #  players.append(my_list)
 
 def power(player):
    return int(player)
@@ -26,17 +14,10 @@ def tpower(team):
 def powerdiff(team1,team2):
     diff=abs(tpower(team1)-tpower(team2))
     return diff
-#def displayteams(bal1teams):
-
-
-#    print("-----------")
-    #    print(bal1teams[0], "Score:", tpower(bal1teams[0]))
-    #    print(bal1teams[1], "Score:", tpower(bal1teams[1]))
-    #    print("-----------")
 
 def balance(players):
     perteam=int(len(players)/2)
-    #print ("Players per team:",perteam)
+  
 
     comb = combinations(players, perteam)
 
@@ -68,8 +49,6 @@ def balance(players):
             balteam.append(t2[:])
             balteams.append(balteam[:])
     return balteams
-# print("Balanced team :")
-#displayteams(random.choice(balteams))
 
 st.title("Ranked Balanced Team Generator V 0.1")
 st.markdown("Made by MuddassirLateef")
