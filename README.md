@@ -1,4 +1,4 @@
-# ranked-balanced-team-generator
+# ranked-balanced-team-generator(Web App)
 Created by Muddassir Lateef
 
 This webapp allows a person to make balanced teams from the given participants based on custom rankings given by each player.
